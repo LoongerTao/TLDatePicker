@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// placeholder字体，默认14
 @property(nonatomic, strong) UIFont *placeholderFont;
-/// placeholder颜色，默认
+/// placeholder颜色，默认 lightTextColor /  secondaryLabelColor（iOS 13+）
 @property(nonatomic, strong) UIColor *placeholderColor;
 
 /// 非选中日期字段字体，默认14
@@ -26,30 +26,30 @@ NS_ASSUME_NONNULL_BEGIN
 /// 选中单位字体，默认10
 @property(nonatomic, strong) UIFont *seletedUnitFont;
 
-/// 非选中日期字段颜色， 默认：
+/// 非选中日期字段颜色， 默认：lightTextColor or secondaryLabelColor（iOS 13+）
 @property(nonatomic, strong) UIColor *textColor;
-/// 选中日期字段颜色， 默认：
+/// 选中日期字段颜色， 默认：darkTextColor or  labelColor（iOS 13+）
 @property(nonatomic, strong) UIColor *seletedTextColor;
-/// 选中日期区间线颜色， 默认：
+/// 选中日期区间线颜色， 默认：lightGrayColor / opaqueSeparatorColor（iOS 13+）
 @property(nonatomic, strong) UIColor *centerLineColor;
 
 /// 错误信息提示字体，默认：14
 @property(nonatomic, strong) UIFont *tipFont;
-/// 错误信息提示文本颜色，默认：
+/// 错误信息提示文本颜色，默认：red
 @property(nonatomic, strong) UIColor *tipTextColor;
 
-/// 整体背景色， 默认：白色
+/// 整体背景色， 默认：白色systemBackgroundColor
 @property(nonatomic, strong) UIColor *backgroundColor;
-/// 工具条景色， 默认：白色
+/// 工具条景色， 默认： [UIColor colorWithWhite:0.985 alpha:1] /  深色模式：[UIColor colorWithWhite:26.f/255.0 alpha:1]
 @property(nonatomic, strong) UIColor *topBarbackgroundColor;
 
-/// 取消按钮字体颜色， 默认：
+/// 取消按钮字体颜色， 默认：darkTextColor or systemTealColor（iOS 13+）
 @property(nonatomic, strong) UIColor *cancelButtonTextColor;
-/// 确定按钮字体颜色， 默认：
+/// 确定按钮字体颜色， 默认：darkTextColor or  systemTealColor（iOS 13+）
 @property(nonatomic, strong) UIColor *doneButtonTextColor;
-/// 取消按钮字体， 默认：
+/// 取消按钮字体， 默认：15 bold
 @property(nonatomic, strong) UIFont *cancelButtonFont;
-/// 确定按钮字体， 默认：
+/// 确定按钮字体， 默认：15 bold
 @property(nonatomic, strong) UIFont *doneButtonTextFont;
 /// 取消按钮文字
 @property(nonatomic, copy) NSString *cancelButtonText;
@@ -59,9 +59,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat cancelButtonCornerRadius;
 /// 确定按钮圆角，默认： 4.f
 @property(nonatomic, assign) CGFloat doneButtonCornerRadius;
-/// 取消按钮背景色，默认：
+/// 取消按钮背景色，默认：clearColor
 @property(nonatomic, strong) UIColor *cancelButtonFillColor;
-/// 确定按钮圆角背景色，默认：
+/// 确定按钮圆角背景色，默认：clearColor
 @property(nonatomic, strong) UIColor *doneButtonFillColor;
 
 + (instancetype)appearance;

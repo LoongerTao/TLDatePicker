@@ -46,11 +46,15 @@
         } else {
             self.backgroundColor = [UIColor whiteColor];
             self.topBarbackgroundColor = [UIColor colorWithWhite:0.96 alpha:1];
-            self.textColor = [UIColor lightGrayColor];
-            self.seletedTextColor = [UIColor darkGrayColor];
+            self.placeholderColor = [UIColor lightTextColor];
+            self.textColor = [UIColor lightTextColor];
+            self.seletedTextColor = [UIColor darkTextColor];
             self.centerLineColor = [UIColor lightGrayColor];
-            self.cancelButtonTextColor = [UIColor darkGrayColor];
-            self.doneButtonTextColor = [UIColor darkGrayColor];
+            self.cancelButtonTextColor = [UIColor darkTextColor];
+            self.doneButtonTextColor = [UIColor darkTextColor];
+            self.cancelButtonFillColor = [UIColor clearColor];
+            self.doneButtonFillColor = [UIColor clearColor];
+            self.tipTextColor = [UIColor redColor];
         }
     }
     
