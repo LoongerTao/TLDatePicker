@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14339AC4239739B60048C032 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AC3239739B60048C032 /* AppDelegate.m */; };
+		14339AC7239739B60048C032 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AC6239739B60048C032 /* SceneDelegate.m */; };
+		14339ACA239739B70048C032 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AC9239739B70048C032 /* ViewController.m */; };
+		14339ACD239739B70048C032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14339ACB239739B70048C032 /* Main.storyboard */; };
+		14339ACF239739B80048C032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14339ACE239739B80048C032 /* Assets.xcassets */; };
+		14339AD2239739B80048C032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14339AD0239739B80048C032 /* LaunchScreen.storyboard */; };
+		14339AD5239739B80048C032 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AD4239739B80048C032 /* main.m */; };
+		14339AEE239739DB0048C032 /* TLDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339ADE239739DB0048C032 /* TLDatePickerAppearance.m */; };
+		14339AEF239739DB0048C032 /* TLDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339ADF239739DB0048C032 /* TLDatePicker.m */; };
+		14339AF0239739DB0048C032 /* NSDate+TLCalendarExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AE1239739DB0048C032 /* NSDate+TLCalendarExtention.m */; };
+		14339AF1239739DB0048C032 /* TLPickerComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AE2239739DB0048C032 /* TLPickerComponent.m */; };
+		14339AF2239739DB0048C032 /* TLDPPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AE5239739DB0048C032 /* TLDPPresentationController.m */; };
+		14339AF3239739DB0048C032 /* TLDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AE8239739DB0048C032 /* TLDatePickerView.m */; };
+		14339AF4239739DB0048C032 /* TLDatePickerBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AE9239739DB0048C032 /* TLDatePickerBaseController.m */; };
+		14339AF5239739DB0048C032 /* TLPickerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AEB239739DB0048C032 /* TLPickerData.m */; };
+		14339AF6239739DB0048C032 /* TLPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14339AEC239739DB0048C032 /* TLPickerItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14339ABF239739B60048C032 /* TLDatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLDatePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14339AC2239739B60048C032 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14339AC3239739B60048C032 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14339AC5239739B60048C032 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		14339AC6239739B60048C032 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		14339AC8239739B60048C032 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14339AC9239739B70048C032 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14339ACC239739B70048C032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14339ACE239739B80048C032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14339AD1239739B80048C032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14339AD3239739B80048C032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14339AD4239739B80048C032 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14339ADC239739DB0048C032 /* TLDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePickerView.h; sourceTree = "<group>"; };
+		14339ADD239739DB0048C032 /* TLDatePickerBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePickerBaseController.h; sourceTree = "<group>"; };
+		14339ADE239739DB0048C032 /* TLDatePickerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePickerAppearance.m; sourceTree = "<group>"; };
+		14339ADF239739DB0048C032 /* TLDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePicker.m; sourceTree = "<group>"; };
+		14339AE0239739DB0048C032 /* TLDPPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDPPresentationController.h; sourceTree = "<group>"; };
+		14339AE1239739DB0048C032 /* NSDate+TLCalendarExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TLCalendarExtention.m"; sourceTree = "<group>"; };
+		14339AE2239739DB0048C032 /* TLPickerComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPickerComponent.m; sourceTree = "<group>"; };
+		14339AE3239739DB0048C032 /* TLPickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPickerItem.h; sourceTree = "<group>"; };
+		14339AE4239739DB0048C032 /* TLPickerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPickerData.h; sourceTree = "<group>"; };
+		14339AE5239739DB0048C032 /* TLDPPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDPPresentationController.m; sourceTree = "<group>"; };
+		14339AE6239739DB0048C032 /* TLDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePicker.h; sourceTree = "<group>"; };
+		14339AE7239739DB0048C032 /* TLDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePickerAppearance.h; sourceTree = "<group>"; };
+		14339AE8239739DB0048C032 /* TLDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePickerView.m; sourceTree = "<group>"; };
+		14339AE9239739DB0048C032 /* TLDatePickerBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePickerBaseController.m; sourceTree = "<group>"; };
+		14339AEA239739DB0048C032 /* NSDate+TLCalendarExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TLCalendarExtention.h"; sourceTree = "<group>"; };
+		14339AEB239739DB0048C032 /* TLPickerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPickerData.m; sourceTree = "<group>"; };
+		14339AEC239739DB0048C032 /* TLPickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPickerItem.m; sourceTree = "<group>"; };
+		14339AED239739DB0048C032 /* TLPickerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPickerComponent.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14339ABC239739B60048C032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14339AB6239739B60048C032 = {
+			isa = PBXGroup;
+			children = (
+				14339ADB239739DB0048C032 /* TLDatePicker */,
+				14339AC1239739B60048C032 /* TLDatePickerDemo */,
+				14339AC0239739B60048C032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14339AC0239739B60048C032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14339ABF239739B60048C032 /* TLDatePickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14339AC1239739B60048C032 /* TLDatePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				14339AC2239739B60048C032 /* AppDelegate.h */,
+				14339AC3239739B60048C032 /* AppDelegate.m */,
+				14339AC5239739B60048C032 /* SceneDelegate.h */,
+				14339AC6239739B60048C032 /* SceneDelegate.m */,
+				14339AC8239739B60048C032 /* ViewController.h */,
+				14339AC9239739B70048C032 /* ViewController.m */,
+				14339ACB239739B70048C032 /* Main.storyboard */,
+				14339ACE239739B80048C032 /* Assets.xcassets */,
+				14339AD0239739B80048C032 /* LaunchScreen.storyboard */,
+				14339AD3239739B80048C032 /* Info.plist */,
+				14339AD4239739B80048C032 /* main.m */,
+			);
+			path = TLDatePickerDemo;
+			sourceTree = "<group>";
+		};
+		14339ADB239739DB0048C032 /* TLDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				14339AEA239739DB0048C032 /* NSDate+TLCalendarExtention.h */,
+				14339AE1239739DB0048C032 /* NSDate+TLCalendarExtention.m */,
+				14339AE6239739DB0048C032 /* TLDatePicker.h */,
+				14339ADF239739DB0048C032 /* TLDatePicker.m */,
+				14339AE7239739DB0048C032 /* TLDatePickerAppearance.h */,
+				14339ADE239739DB0048C032 /* TLDatePickerAppearance.m */,
+				14339ADD239739DB0048C032 /* TLDatePickerBaseController.h */,
+				14339AE9239739DB0048C032 /* TLDatePickerBaseController.m */,
+				14339ADC239739DB0048C032 /* TLDatePickerView.h */,
+				14339AE8239739DB0048C032 /* TLDatePickerView.m */,
+				14339AE0239739DB0048C032 /* TLDPPresentationController.h */,
+				14339AE5239739DB0048C032 /* TLDPPresentationController.m */,
+				14339AED239739DB0048C032 /* TLPickerComponent.h */,
+				14339AE2239739DB0048C032 /* TLPickerComponent.m */,
+				14339AE4239739DB0048C032 /* TLPickerData.h */,
+				14339AEB239739DB0048C032 /* TLPickerData.m */,
+				14339AE3239739DB0048C032 /* TLPickerItem.h */,
+				14339AEC239739DB0048C032 /* TLPickerItem.m */,
+			);
+			path = TLDatePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14339ABE239739B60048C032 /* TLDatePickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14339AD8239739B80048C032 /* Build configuration list for PBXNativeTarget "TLDatePickerDemo" */;
+			buildPhases = (
+				14339ABB239739B60048C032 /* Sources */,
+				14339ABC239739B60048C032 /* Frameworks */,
+				14339ABD239739B60048C032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLDatePickerDemo;
+			productName = TLDatePickerDemo;
+			productReference = 14339ABF239739B60048C032 /* TLDatePickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14339AB7239739B60048C032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "故乡的云";
+				TargetAttributes = {
+					14339ABE239739B60048C032 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 14339ABA239739B60048C032 /* Build configuration list for PBXProject "TLDatePickerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14339AB6239739B60048C032;
+			productRefGroup = 14339AC0239739B60048C032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14339ABE239739B60048C032 /* TLDatePickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14339ABD239739B60048C032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14339AD2239739B80048C032 /* LaunchScreen.storyboard in Resources */,
+				14339ACF239739B80048C032 /* Assets.xcassets in Resources */,
+				14339ACD239739B70048C032 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14339ABB239739B60048C032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14339AF0239739DB0048C032 /* NSDate+TLCalendarExtention.m in Sources */,
+				14339AF6239739DB0048C032 /* TLPickerItem.m in Sources */,
+				14339ACA239739B70048C032 /* ViewController.m in Sources */,
+				14339AEF239739DB0048C032 /* TLDatePicker.m in Sources */,
+				14339AC4239739B60048C032 /* AppDelegate.m in Sources */,
+				14339AD5239739B80048C032 /* main.m in Sources */,
+				14339AF5239739DB0048C032 /* TLPickerData.m in Sources */,
+				14339AC7239739B60048C032 /* SceneDelegate.m in Sources */,
+				14339AF3239739DB0048C032 /* TLDatePickerView.m in Sources */,
+				14339AEE239739DB0048C032 /* TLDatePickerAppearance.m in Sources */,
+				14339AF1239739DB0048C032 /* TLPickerComponent.m in Sources */,
+				14339AF4239739DB0048C032 /* TLDatePickerBaseController.m in Sources */,
+				14339AF2239739DB0048C032 /* TLDPPresentationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14339ACB239739B70048C032 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14339ACC239739B70048C032 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14339AD0239739B80048C032 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14339AD1239739B80048C032 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14339AD6239739B80048C032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14339AD7239739B80048C032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14339AD9239739B80048C032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DA3ZJPDSKE;
+				INFOPLIST_FILE = TLDatePickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxdy.TLDatePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14339ADA239739B80048C032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DA3ZJPDSKE;
+				INFOPLIST_FILE = TLDatePickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gxdy.TLDatePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14339ABA239739B60048C032 /* Build configuration list for PBXProject "TLDatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14339AD6239739B80048C032 /* Debug */,
+				14339AD7239739B80048C032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14339AD8239739B80048C032 /* Build configuration list for PBXNativeTarget "TLDatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14339AD9239739B80048C032 /* Debug */,
+				14339ADA239739B80048C032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14339AB7239739B60048C032 /* Project object */;
+}
