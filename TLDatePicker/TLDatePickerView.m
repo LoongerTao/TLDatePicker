@@ -196,7 +196,7 @@
         // 恢复到上次选中的item
         [cpt selectItemOfIndex:index];
         [self scrollToSelectedDateWithAnimatedComponent:cpt];
-        [self showTip:@"无效选择，日期低于上限"];
+        [self showTip:@"无效选择，日期小于下限"];
         return;
     }else if (self.maxDate && [self.maxDate compareFrom:willSelectDate] < 0) {
         // 无效选择，日期不能大于self.maxDate

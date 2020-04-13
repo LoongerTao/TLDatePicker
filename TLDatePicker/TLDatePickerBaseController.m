@@ -39,9 +39,8 @@
 - (void)updatePreferredContentSizeWithTraitCollection:(UITraitCollection *)traitCollection {
     BOOL isCompact = traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact;
     CGFloat H = isCompact ? kHeightOfLandscape : kHeight;
-    BOOL isIPhoneX = YES;
-    if (isIPhoneX) {
-        H += 34;
+    if (!self.isIPhoneXOrLater) {
+        H += 30;
     }
     self.preferredContentSize = CGSizeMake(self.view.bounds.size.width, H);
 }
@@ -59,5 +58,11 @@
     [vc presentViewController:self animated:YES completion:nil];
 }
 
-
+- (BOOL)isIPhoneXOrLater {
+    BOOL isIPhoneX = (CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(375, 812)) ||
+                      CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(812, 375)) ||
+                      CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(414, 896)) ||
+                      CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(896, 414)));
+    return isIPhoneX;
+}
 @end

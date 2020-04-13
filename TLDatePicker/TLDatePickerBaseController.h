@@ -10,16 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define kHeight 320.f               // 竖屏
+#define kHeight 270.f               // 竖屏
 #define kHeightOfLandscape 270.f    // 横屏
 
 @interface TLDatePickerBaseController : UIViewController
 
-/// Picker View 的有效高度，iPhoneX系列 自动增加34。 默认： kHeight
+/// Picker View 的有效高度，默认： kHeight (非iPhone X系列 额外增加30 )
 @property(nonatomic, assign) CGFloat height;
 
 @property(nonatomic, assign) BOOL disableTapMaskToDismiss;
 @property(nonatomic, copy) void (^didTapMaskView)(void);
+
+@property(nonatomic, assign, readonly) BOOL isIPhoneXOrLater;
 
 - (void)showInViewController:(UIViewController *)vc;
 @end

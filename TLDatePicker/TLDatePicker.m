@@ -118,8 +118,7 @@
     frame.size.height = 50;
     self.topBar.frame = frame;
     
-//    rect.size.height = 50;
-//    rect.origin.y = 50;
+    rect.origin.y = self.isIPhoneXOrLater ? 25 : 10;
     self.datePicker.frame = rect;
     
     [self.view bringSubviewToFront:self.topBar];
