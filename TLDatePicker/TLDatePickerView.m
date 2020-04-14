@@ -97,7 +97,24 @@
 - (void)resetParams
 {
     if (!self.date) {
-        self.date = [NSDate date];
+       self.date = [NSDate date];
+       if (self.maxDate && [self.maxDate compareFrom:self.date] < 0) {
+           NSCalendarUnit unit = [self calendarUnit];
+           if ([self.date isEqualDate:self.maxDate miniUnit:unit]) { // 小误差范围内修正
+               self.maxDate = [NSDate dateWithTimeIntervalSince1970:self.date.timeIntervalSince1970 + 1];
+           }else {
+               NSAssert(NO, @"TLDatePicker: maxDate不能小于默认date");
+           }
+       }
+    }else {
+       if (self.minDate && [self.minDate compareFrom:self.date] > 0) {
+           NSCalendarUnit unit = [self calendarUnit];
+           if ([self.date isEqualDate:self.minDate miniUnit:unit]) { // 小误差范围内修正
+               self.minDate = [NSDate dateWithTimeIntervalSince1970:self.date.timeIntervalSince1970 - 1];
+           }else {
+               NSAssert(NO, @"TLDatePicker: minDate不能大于默认date");
+           }
+       }
     }
     
     [self.data updateComponentWithDate:self.date];
@@ -111,6 +128,26 @@
         }
     }
 }
+
+- (NSCalendarUnit)calendarUnit
+{
+    if (self.mode == TLDatePickerModeYear) {
+        return NSCalendarUnitYear;
+    }
+    
+    if (self.mode == TLDatePickerModeYearAndMonth) {
+        return NSCalendarUnitMonth;
+    }
+    if (self.mode == TLDatePickerModeDate) {
+        return NSCalendarUnitDay;
+    }
+    if (self.mode == TLDatePickerModeTime || self.mode == TLDatePickerModeDateAndTime) {
+        return NSCalendarUnitMinute;
+    }
+
+    return NSCalendarUnitSecond;
+}
+
 
 /// 需要动画的component
 - (void)scrollToSelectedDateWithAnimatedComponent:(TLPickerComponent *)component

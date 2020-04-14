@@ -27,6 +27,26 @@
     return time;
 }
 
+/// 比较两个日期是否相等，unit: 精确度(Year ~ Second)
+- (BOOL)isEqualDate:(NSDate *)date miniUnit:(NSCalendarUnit)unit {
+    BOOL flag = self.year == date.year;
+    if (unit == NSCalendarUnitYear) return flag;
+    
+    flag = flag && self.month == date.month;
+    if (unit == NSCalendarUnitMonth) return flag;
+    
+    flag = flag && self.day == date.day;
+    if (unit == NSCalendarUnitDay) return flag;
+    
+    flag = flag && self.hour == date.hour;
+    if (unit == NSCalendarUnitHour) return flag;
+    
+    flag = flag && self.minute == date.minute;
+    if (unit == NSCalendarUnitMinute) return flag;
+       
+    return flag && self.second == date.second;;
+}
+
 // MARK: - 判断
 
 - (BOOL)isToday {

@@ -19,6 +19,10 @@
  * 比较from和self的时间差值,返回秒 self - from
  */
 - (NSTimeInterval)compareFrom:(NSDate *)from;
+/**
+ * 比较两个日期是否相等，unit: 精确度(Year ~ Second)
+ */
+- (BOOL)isEqualDate:(NSDate *)date miniUnit:(NSCalendarUnit)unit;
 
 // MARK: - 判断
 /**
