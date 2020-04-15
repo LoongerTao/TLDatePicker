@@ -148,24 +148,34 @@
 
 // MARK: - Actions
 - (void)cancel:(UIButton *)btn {
-    
-    if (self.picekerEvent) {
-        self.picekerEvent(self.selectedDate, TLDatePickerEventTypeCancelButtonDidClicked);
+        
+    if(self.disableDismissByCancelButton) {
+        if (self.picekerEvent) {
+            self.picekerEvent(self.selectedDate, TLDatePickerEventTypeCancelButtonDidClicked);
+        }
+        return;
+    }else {
+        [self dismissAnimated:YES completion:^{
+            if (self.picekerEvent) {
+                self.picekerEvent(self.selectedDate, TLDatePickerEventTypeCancelButtonDidClicked);
+            }
+        }];
     }
-    
-    if(self.disableDismissByCancelButton) return;
-
-    [self dismissAnimated:YES completion:nil];
 }
 
 - (void)commit:(UIButton *)btn {
-    if (self.picekerEvent) {
-        self.picekerEvent(self.selectedDate, TLDatePickerEventTypeDoneButtonDidClicked);
+    if(self.disableDismissByDoneButton) {
+        if (self.picekerEvent) {
+            self.picekerEvent(self.selectedDate, TLDatePickerEventTypeDoneButtonDidClicked);
+        }
+        return;
+    }else {
+        [self dismissAnimated:YES completion:^{
+            if (self.picekerEvent) {
+                self.picekerEvent(self.selectedDate, TLDatePickerEventTypeDoneButtonDidClicked);
+            }
+        }];
     }
-    
-    if(self.disableDismissByDoneButton) return;
-    
-    [self dismissAnimated:YES completion:nil];
 }
 
 // MARK: - API

@@ -152,14 +152,18 @@
 
 // MARK: - Tap Gesture Recognizer
 - (void)dimmingViewTapped:(UITapGestureRecognizer *)sender {
-    if (self.didTapMaskView) {
-        self.didTapMaskView();
-    }
     if (!self.disableTapMaskToDismiss) {
-        [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+            if (self.didTapMaskView) {
+                self.didTapMaskView();
+            }
+        }];
+    }else {
+        if (self.didTapMaskView) {
+            self.didTapMaskView();
+        }
     }
 }
-
 
 // MARK: - UIViewControllerAnimatedTransitioning
 

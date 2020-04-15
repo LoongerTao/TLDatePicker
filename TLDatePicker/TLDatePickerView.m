@@ -96,6 +96,17 @@
 
 - (void)resetParams
 {
+    if (self.mode < TLDatePickerModeTime) {
+        if (self.maxDate) {
+            NSString *date = [NSString stringWithFormat:@"%zi-%zi-%zi 23:59:59", self.maxDate.year, self.maxDate.month,  self.maxDate.day];
+            self.maxDate = [NSDate dateWithFormatString:date];
+        }
+        if (self.minDate) {
+            NSString *date = [NSString stringWithFormat:@"%zi-%zi-%zi 00:00:00", self.minDate.year, self.minDate.month,  self.minDate.day];
+            self.minDate = [NSDate dateWithFormatString:date];
+        }
+    }
+    
     if (!self.date) {
        self.date = [NSDate date];
        if (self.maxDate && [self.maxDate compareFrom:self.date] < 0) {
